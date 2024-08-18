@@ -1,0 +1,16 @@
+#!/bin/bash
+## Ciclo para descargar hasta 5 archivos y alacenarlos con nombre a cada uno
+for i in {1..5}; do
+	echo "Archivo  $i"
+	read -p url ## Solicita al usuario el url del archivo a descargar
+	filename=$(basename "$url") ## Extraer nombre del archivo
+	##Identificar si el archivo es el necesario (fna)
+	if ["$filename"==*.fna.gz]; then
+		curl -O "$url "
+	else
+		echo "$filename
+"
+		echo "Error: Intenta con otro link"
+		i=i-1
+	fi
+done
