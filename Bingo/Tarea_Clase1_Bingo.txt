@@ -18,17 +18,10 @@ grep -c TAA *fna;
 
 grep -rc ATG;
 
-alias "Baby shark, doo doo doo doo
-doo doo
-Baby shark, doo doo doo doo
-doo doo
-Baby shark, doo doo doo doo
-doo doo
-Baby shark!"="cat letra"
+./babyshark.sh
 
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM5>wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/011/605/535/GCF_011605535.1_ASM1>grep -c M archivo?
-grep -c K archivo?
-grep -c V archivo?
+tr 'ACGT' 'acgt' < GCA_963665755.1_odSpoOffi2.Bacteria_1.1_genomic.fna > bacteria_1_minusculas
+tr 'ACGT' 'acgt' < GCA_963667425.1_piMetSpee1.Bacteria_6.1_genomic.fna > bacteria_2_minusculas
 
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/Viruses/acholeplasma_virus_l2_uid14066/NC_>gzip -d *.gff > uziped
 cat uziped
